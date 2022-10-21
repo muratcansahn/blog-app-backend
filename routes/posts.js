@@ -70,6 +70,7 @@ router.get("/:id", async (req, res) => {
 router.get("/", async (req, res) => {
   const username = req.query.user;
   const catName = req.query.cat;
+  /// if we have a query in the url
   try {
     let posts;
     if (username) {
